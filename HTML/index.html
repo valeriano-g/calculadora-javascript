@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <p class="text-principal" id="simpleUsage"></p>
+    <div class="calculator">
+
+        <input type="text" class="screen" id="result" disabled>
+        <div class="buttons">
+            <div class="row">
+                <button class="btn btn-c" onclick="clearScreen()">C</button>
+                <button class="btn btn-corchet" onclick="appendToScreen(')(')">(</button>
+                <button class="btn btn-corchet" onclick="appendToScreen(')(')">)</button>
+
+                <button class="btn  btn-operator" onclick="appendToScreen('/')">÷</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="appendToScreen('7')">7</button>
+                <button class="btn" onclick="appendToScreen('8')">8</button>
+                <button class="btn" onclick="appendToScreen('9')">9</button>
+                <button class="btn btn-operator" onclick="appendToScreen('*')">x</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="appendToScreen('4')">4</button>
+                <button class="btn" onclick="appendToScreen('5')">5</button>
+                <button class="btn" onclick="appendToScreen('6')">6</button>
+                <button class="btn btn-operator" onclick="appendToScreen('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="btn" onclick="appendToScreen('1')">1</button>
+                <button class="btn" onclick="appendToScreen('2')">2</button>
+                <button class="btn" onclick="appendToScreen('3')">3</button>
+                <button class="btn btn-operator" onclick="appendToScreen('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-zero" onclick="appendToScreen('0')">0</button>
+                <button class="btn" onclick="appendToScreen('.')">.</button>
+                <button class="btn btn-equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="../JAVASCRIPT/index.js"></script>
+
+</body>
+
+</html>

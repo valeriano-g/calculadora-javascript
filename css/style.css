@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+    flex-direction: column;
+    background-image: url(../img/pexels-fwstudio-129731.jpg);
+}
+
+
+.text-principal {
+
+    font-size: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    text-transform: capitalize;
+
+}
+
+
+
+.calculator {
+    width: 300px;
+
+    background-color: #ccc;
+    border: 2px groove green;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 14px;
+
+    box-shadow: 8px 13px 35px 30px rgba(8, 112, 43, 0.74);
+    -webkit-box-shadow: 8px 13px 35px 30px rgba(8, 112, 43, 0.74);
+    -moz-box-shadow: 8px 13px 35px 30px rgba(8, 112, 43, 0.74);
+}
+
+.screen {
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    text-align: right;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    border: none;
+    background-color: #ccc;
+    color: #f7f7f7;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    border: 1px solid #056BFC;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #f9f9f9f9;
+    transition: 0.5s;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+.btn-operator {
+    color: #056BFC;
+
+}
+
+
+
+.btn-equal:hover {
+    color: red;
+
+}
+
+.btn-c {
+    color: red;
+}
+
+.btn-corchet {
+    color: #056BFC;
+}
